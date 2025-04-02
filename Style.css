@@ -1,0 +1,57 @@
+body {
+    background-image: url('https://i.ibb.co/Qv671SrT/4974.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background-color: #0078d4;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.message-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.message-box::before {
+    content: "Type your message";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #ddd;
+}
