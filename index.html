@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send WhatsApp Message</title>
+    <style>
+        body {
+            background-image: url('https://i.ibb.co/Qv671SrT/4974.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+        }
+        textarea {
+            width: 300px;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Send Message to WhatsApp</h2>
+    <div class="message-box">
+        <textarea id="message" placeholder="Type your message"></textarea>
+    </div>
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        function sendMessage() {
+            var phoneNumber = "94776938009"; // Replace with the phone number you want to send the message to
+            var message = "I LOVE YOU CYBER CHALAH 💗📍"; // Default message to be sent
+
+            // URL encode the message
+            var url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
